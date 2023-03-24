@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { selectCartItems, selectCartTotal } from '../../store/cart/cart.selector.js';
 import { selectCurrentUser } from '../../store/user/user.selector.js';
 import CheckoutItem from '../../components/checkout-items/checkout-items.components.jsx';
-import {CheckoutContainer, CheckoutHeader, CheckoutHeaderBlock, CheckoutTotal} from './checkout.styles.jsx';
+import {CheckoutContainer, CheckoutHeader, CheckoutHeaderBlock, CheckoutDescriptionHeaderBlock, CheckoutTotal} from './checkout.styles.jsx';
 
 
 import OurButton from '../../components/button/button.components.jsx';
@@ -32,9 +32,9 @@ const Checkout = () => {
                 <CheckoutHeaderBlock>
                     <span>Product</span>
                 </CheckoutHeaderBlock> 
-                <CheckoutHeaderBlock>
+                <CheckoutDescriptionHeaderBlock>
                     <span>Description</span>
-                </CheckoutHeaderBlock> 
+                </CheckoutDescriptionHeaderBlock> 
                 <CheckoutHeaderBlock>
                     <span>Quantity</span>
                 </CheckoutHeaderBlock> 

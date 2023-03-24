@@ -41,14 +41,38 @@ export const CheckoutHeaderBlock = styled.div`
         width: 8%; 
     } 
 
-    @media screen and (max-width: 600px) {
-        width: 23%;
-        
+    
+
+    @media screen and (max-width: 460px) {
+        transform: scale(0.82);
         
     }
         
 `
+  
+export const CheckoutDescriptionHeaderBlock = styled.div` 
+    text-transform: capitalize; 
+    width: 23%; 
     
+    &:last-child { 
+        width: 8%; 
+    } 
+
+    
+
+    @media screen and (max-width: 460px) {
+        transform: scale(0.82);
+        
+    }
+
+    @media screen and (max-width: 375px) {
+        display: none;
+        
+    }
+        
+`
+
+
 export const CheckoutTotal =styled.span` 
     margin-top: 30px; 
     margin-left: auto; 

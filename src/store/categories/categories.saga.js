@@ -2,7 +2,7 @@ import { takeLatest, all, call, put } from 'redux-saga/effects';
 import {addCollectionAndDocuments, getCategoriesAndDocuments} from '../../utils/firebase/firebase.utils.js';
 import {fetchCategoriesSuccess, fetchCategoriesFailed} from './category.action.js';
 import { CATEGORIES_ACTION_TYPES } from './category.types.js';
-import PRODUCT_DATA from '../../product-data.js';
+// import PRODUCT_DATA from '../../product-data.js';
 
 
 export function* onFetchCategories() {

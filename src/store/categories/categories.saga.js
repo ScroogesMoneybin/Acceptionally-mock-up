@@ -13,7 +13,7 @@ export function* fetchCategoriesAsync() {
     
     try {
         /**/
-        yield addCollectionAndDocuments('categories', PRODUCT_DATA);  /*This adds the products to the database. Comment it out when not loading new items.*/
+        // yield addCollectionAndDocuments('categories', PRODUCT_DATA);  /*This adds the products to the database. Comment it out when not loading new items.*/
         /**/
         const categoriesArray = yield call(getCategoriesAndDocuments,'categories');  /* Call() turns a function into an effect. First argument is the function, followed by parameters of that function */
         yield put(fetchCategoriesSuccess(categoriesArray)); /* Instead of dispatch, use put inside of a generator */

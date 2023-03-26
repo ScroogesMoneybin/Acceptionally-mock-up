@@ -16,7 +16,7 @@ import FullPaymentForm from './routes/full-payment-form/full-payment-form.compon
 import Contact from './routes/contact/contact.components.jsx';
 import ContactRecognition from './routes/contact-recognition/contact-recognition.components.jsx';
 import TermsOfUse from './routes/terms-of-use/terms-of-use.components.jsx';
-import {GlobalStyle} from './global.styles.js';
+
 
 const App = () => {
   const dispatch = useDispatch();

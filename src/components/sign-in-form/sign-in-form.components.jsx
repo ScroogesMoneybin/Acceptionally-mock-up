@@ -41,9 +41,9 @@ const SignInForm = () => {
             
         } catch(error) {
             if (error.code==='auth/wrong-password') {
-                alert('Wrong password');
+                alert('Error with the login');
             } else if (error.code==='auth/user-not-found') {
-                alert('User Not Found');
+                alert('Error with the login');
             }
             else {
                 console.log("There was an error", error);
